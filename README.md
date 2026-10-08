@@ -41,7 +41,7 @@ scripts/
 ### 2. Downstream scRNA-seq analyses (`scripts/scRNAseq/`)
 | Script | Description |
 |---|---|
-| `scRNAseq_MS_differential_gene_expression.R` | Adds the B cell subset labels to the main objects (saved as the `*_curated_with_subset.rds` objects that the later scripts use). Runs differential expression between each DMT and before treatment with consensus pseudobulk (DESeq2, edgeR and limma) and single-cell Wilcoxon tests, then GO enrichment (clusterProfiler) and a comparison of DEGs between dcLN and PBMC |
+| `scRNAseq_MS_differential_gene_expression.R` | Adds the B cell subset labels to the main objects. Runs differential expression between each DMT and before treatment with consensus pseudobulk (DESeq2, edgeR and limma) and single-cell Wilcoxon tests, then GO enrichment (clusterProfiler) and a comparison of DEGs between dcLN and PBMC |
 | `scRNAseq_MS_proprotional_changes_sccomp.R` | Tests differences in cell type composition with sccomp (MS vs. controls, and each DMT vs. before treatment) in dcLN and PBMC |
 | `scRNAseq_MS_proprotional_changes_boxplots.R` | Cell type proportions for each sample with Wilcoxon tests, B cell subset proportions, and fold and relative percentage changes after treatment |
 | `scRNAseq_exhausted_cd8_analysis.R` | Subclusters CD8 T cells, identifies and characterises exhausted / tissue-resident memory CD8 subsets and their proportions, and runs pseudotime trajectory analysis (monocle3) |
